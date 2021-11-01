@@ -7,7 +7,7 @@ const useStyles = makeStyles(()=>({
       },
 
       bannerContent: {
-          height: 200,
+          height: 100,
           display: "flex",
           flexDirection: "column",
           paddingTop: 25,
@@ -53,6 +53,7 @@ const Banner = () => {
             >
                 Keep yourself updated on your favorite crypto currency
             </Typography>
+            <br></br>
             <Carousel />
 
             </div>
