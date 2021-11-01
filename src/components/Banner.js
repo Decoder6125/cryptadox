@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, makeStyles, Typography } from '@material-ui/core';
-
+import Carousel from '../components/Carousel';
 const useStyles = makeStyles(()=>({
       banner: {
           backgroundImage: "url(https://cdn.pixabay.com/photo/2018/02/01/17/15/dark-3123582_960_720.jpg)",
@@ -53,6 +53,8 @@ const Banner = () => {
             >
                 Keep yourself updated on your favorite crypto currency
             </Typography>
+            <Carousel />
+
             </div>
         </div>
     )
