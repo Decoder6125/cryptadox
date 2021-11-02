@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import CoinsTable from '../components/CoinsTable'
+import Loader from '../components/Loader'
 const Homepage = () => {
     
 
@@ -10,6 +11,7 @@ const Homepage = () => {
         <div>
             <Banner />
             <CoinsTable />
+            <Loader />
         </div>
     )
 }

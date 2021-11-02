@@ -5,9 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: montserrat;
 }
 
 a {
   text-decoration: none;
-  color: rgb(59, 219, 152)
+  color: #30a2db;
 }

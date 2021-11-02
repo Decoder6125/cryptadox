@@ -90,14 +90,9 @@ export default function CoinsTable() {
           variant="h4"
           style={{ margin: 18, fontFamily: "Montserrat" }}
         >
-          Cryptocurrency Prices by Market Cap
+          Price distribution by Market Cap
         </Typography>
-        <TextField
-          label="Search For a Crypto Currency.."
-          variant="outlined"
-          style={{ marginBottom: 20, width: "100%" }}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        
         <TableContainer component={Paper}>
           {loading ? (
             <LinearProgress style={{ backgroundColor: "#30a2db" }} />
