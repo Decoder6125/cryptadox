@@ -12,6 +12,16 @@ const useStyles = makeStyles(()=> ({
           alignItems: "center",
 
       },
+
+      carouselItems: {
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          color: "white",
+          cursor: "pointer",
+          textTransform: "uppercase",
+          fontFamily: "montserrat"
+      },
 }))
 
 export function numberWithCommas (x) {
@@ -37,7 +47,7 @@ const Carousel = () => {
     const items = trending.map((coin)=> {
         let profit = coin.price_change_percentage_24h >=0;
            return(
-          <Link className={classes.carousel.item} to={`/coins/${coin.id}`}>
+          <Link className={classes.carouselItems} to={`/coins/${coin.id}`}>
             <img 
                 src={coin?.image}
                 alt={coin.name}
@@ -47,7 +57,12 @@ const Carousel = () => {
             <span>
                 {coin?.symbol.toUpperCase()}
                 &nbsp;
-                <span>
+                <span 
+                style={{
+                    color: profit>0 ? "rgb(116, 242, 109)" : "red",
+                    fontWeight: 500,
+                }}
+                >
                     {profit && "+"} {coin?.price_change_percentage_24h?.toFixed(2)}%
                 </span>
             </span>
