@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# CRYPTADOX
+  Cryptadox is a cryptocurrency tracking React webapp which provides real-time coins' data and past 1 weekly/monthly trends graphically.
+
+# Screenshots
+Coin Data
+<img src="https://res.cloudinary.com/decoderinstaclone/image/upload/v1655568698/Screenshot_459_qrtsps.png" />
+Specific Coin Data
+<img src="https://res.cloudinary.com/decoderinstaclone/image/upload/v1655568699/Screenshot_460_typ4fz.png" />
+State change between INR and USD
+<img src="https://res.cloudinary.com/decoderinstaclone/image/upload/v1655568697/Screenshot_461_akxiwn.png" />
+
+# Run locally by following these steps
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
